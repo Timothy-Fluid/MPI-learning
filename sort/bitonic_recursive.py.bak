@@ -56,8 +56,8 @@ class Sort():
         self.array[j] = tmp
 
 
-#test_array = Sort(32)
-#tmp = test_array.array.copy()
-#print('Befort sort: ' + str(test_array.array))
-# test_array.Bitonic('up')
-#print('After sort: ' + str(test_array.array))
+test_array = Sort(2048)
+tmp = test_array.array.copy()
+print('Befort sort: ' + str(test_array.array))
+test_array.Bitonic('up')
+print('After sort: ' + str(test_array.array))

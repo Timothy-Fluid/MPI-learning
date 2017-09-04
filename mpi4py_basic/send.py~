@@ -1,0 +1,10 @@
+import mpi4py.MPI as MPI
+
+comm = MPI.COMM_WORLD
+size = comm.Get_size()
+rank = comm.Get_rank()
+
+data = None
+if rank == 0:
+    data = [1, 2, 3, 4]
+    comm.send(data, dest=1, tag=11)
